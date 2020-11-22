@@ -11,8 +11,18 @@ export default class NameForm extends React.Component {
 
   handleSubmit() {
     submitted = true;
-      $("#gform *").fadeOut(500);
-      $("#gform").prepend("<h1>Thanks For Signing Up, We'll Keep You Posted!</h1>");
+    $("#gform *").fadeOut(500);
+    $("#gform").prepend(
+      "<h1>Thanks For Signing Up, We'll Keep You Posted!</h1>"
+    );
+  }
+
+  loadFrame() {
+    if (submitted) {
+      window.open = function (url, name, features, replace) {
+        $('#hidden_iframe').attr('src', url);
+    }
+    }
   }
 
   render() {
@@ -22,11 +32,12 @@ export default class NameForm extends React.Component {
           className={styles.form}
           name="gform"
           id="gform"
-          action="https://docs.google.com/forms/d/1qJ8yOg670AI2dsUweVNgeSpyVcBIdoOYdN14VpRt8ko/formResponse?"
+          action="https://www.docs.google.com/forms/d/1qJ8yOg670AI2dsUweVNgeSpyVcBIdoOYdN14VpRt8ko/formResponse?"
           target="hidden_iframe"
           onSubmit={this.handleSubmit}
         >
-          <label for="fieldStudy">What's your field of Study?</label><br></br>
+          <label for="fieldStudy">What's your field of Study?</label>
+          <br></br>
           <select
             className={styles.input}
             id="entry.1812034651"
@@ -59,12 +70,11 @@ export default class NameForm extends React.Component {
             Sign Up
           </button>
         </form>
-
         <iframe
-          name="hidden_iframe"
+          className={styles.hidden}
           id="hidden_iframe"
-          style={{ display: "none" }}
-          onload="if(submitted) {}"
+          name="hidden_iframe"
+          onload="loadFrame()"
         ></iframe>
       </div>
     );
