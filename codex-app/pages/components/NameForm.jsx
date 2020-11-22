@@ -26,7 +26,7 @@ export default class NameForm extends React.Component {
           target="hidden_iframe"
           onSubmit={this.handleSubmit}
         >
-          <label for="fieldStudy">What's your field of Study?</label>
+          <label for="fieldStudy">What's your field of Study?</label><br></br>
           <select
             className={styles.input}
             id="entry.1812034651"

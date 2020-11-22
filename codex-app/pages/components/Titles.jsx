@@ -3,7 +3,7 @@ import styles from "../../styles/Home.module.css";
 
 export default function Titles() {
   return (
-    <div>
+    <div className={styles.alligned}>
       <h1 className={styles.title}>Revolution of Studying</h1>
       <p className={styles.header}>Sign Up For Beta Release!</p>
       <p className={styles.description}>

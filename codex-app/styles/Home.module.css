@@ -18,6 +18,12 @@
   text-align: center;
 }
 
+.alligned{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
 .inline{
   display: inline-block;
 }
@@ -194,6 +200,7 @@
 .li {
   list-style-type: none;
   line-height: 1.5;
+  text-align: center;
 }
 
 @media screen and (max-width: 480px) {
