@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 
 export default function Form() {
   return (
-    <div>
+    <div className={styles.formDiv}>
       <form
         className={styles.form}
         name="gform"

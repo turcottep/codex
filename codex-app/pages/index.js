@@ -4,15 +4,17 @@ import Home2 from "./components/Home.jsx";
 
 export default function Home() {
   return (
-    <div className={styles.body}>
+    <html>
+    <div className={styles.main}>
       <Head>
         <title>Codex Reader</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript">var submitted=false;</script>
       </Head>
-      <body>
+      <body className={styles.body}>
         <Home2 />
       </body>
     </div>
+    </html>
   );
 }
