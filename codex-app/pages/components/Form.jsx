@@ -9,7 +9,7 @@ export default function Form() {
         className={styles.form}
         name="gform"
         id="gform"
-        action="https://docs.google.com/forms/d/1qJ8yOg670AI2dsUweVNgeSpyVcBIdoOYdN14VpRt8ko/formResponse?"
+        action="https://docs.google.com/forms/d/1FAIpQLSeg1niOvwRQ9e1ymeGckkJ4n4TmZ23UguRnFTztQWdf6USzXA/formResponse?"
         target="hidden_iframe"
         onsubmit="submitted=true"
       >
@@ -50,7 +50,7 @@ export default function Form() {
         name="hidden_iframe"
         id="hidden_iframe"
         style={{ display: "none" }}
-        onLoad="if(submitted) {}"
+        onload="if(submitted) {}"
       ></iframe>
 
     </div>

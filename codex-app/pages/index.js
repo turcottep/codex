@@ -10,8 +10,8 @@ export default function Home() {
         <title>Codex Reader</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript">var submitted=false;</script>
-        <meta httpEquiv="Content-Security-Policy" 
-        content="frame-src https://docs.google.com/forms/;"></meta>
+        {/* <meta httpEquiv="Content-Security-Policy" 
+        content="frame-src atlassian-companion:;"></meta> */}
       </Head>
       <body className={styles.body}>
         <Home2 />
