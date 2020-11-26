@@ -13,4 +13,4 @@ Check out what you'll be able to do:
 - Syncs across your devices
 - Automatically creates Highlight and take notes for you
 
-You can [check out the app](https://codexreader.com/) here - your feedback and contributions are welcome!
+You can [check out the app here](https://www.codexreader.com/) - your feedback and contributions are welcome!
