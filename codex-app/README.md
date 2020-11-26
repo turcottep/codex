@@ -1,18 +1,30 @@
-## Revolution of Studying
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## SIGN UP FOR BETA RELEASE!
+## Getting Started
 
-Codex Reader is almost ready. If you're interested in testing it out, then sign up below to get exclusive access.
+First, run the development server:
 
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-Check out what you'll be able to do:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- Reads PDF out loud with a human-like voice
-- Sorts text from sections of interest
-- Doesn't read useless information (page number, chapters numbers, etc.)
-- Syncs across your devices
-- Automatically creates Highlight and take notes for you
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-You can [check out the app](https://codexreader.com/) here - your feedback and contributions are welcome!
+## Learn More
 
+To learn more about Next.js, take a look at the following resources:
 
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
