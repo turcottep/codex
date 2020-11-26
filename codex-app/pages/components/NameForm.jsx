@@ -58,6 +58,7 @@ export default class NameForm extends React.Component {
                     >
                         <option selected value="default"></option>
                         <option value="engineering">Engineering</option>
+                        <option value="engineering">Health</option>
                         <option value="sciences">Sciences (Computer, Pure, Human, etc.)</option>
                         <option value="law">Law</option>
                         <option value="teaching">Teaching</option>
