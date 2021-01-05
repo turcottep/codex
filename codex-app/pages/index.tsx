@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
 
       </Head>
-      <Navbar/>
+      <Navbar />
       <main>
         <h1> CODEX APP</h1>
       </main>
