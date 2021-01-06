@@ -1,5 +1,25 @@
 import React from "react";
 
+// async function fetchLeadsRequest() {
+//   const response = await fetch("/api/leads");
+//   const { leads } = await response.json();
+//   return leads.map((lead) => ({
+//     email: lead.email,
+//     field: lead.field_study,
+//   }));
+// }
+
+async function createLeadRequest(mail: string, fiel: string) {
+  const response = await fetch("/api/leads/create", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ email: mail, field: fiel }),
+  });
+  const data = await response.json();
+  console.log(data);
+}
 export default class NameForm extends React.Component {
   constructor(props) {
     super(props);
@@ -10,8 +30,10 @@ export default class NameForm extends React.Component {
 
   postToGoogle() {
     console.log("lol");
-    var field1 = $("#email").val();
-    var field2 = $("#field_study").val();
+    const field1 = $("#email").val().toString();
+    const field2 = $("#field_study").val().toString();
+
+    createLeadRequest(field1, field2);
 
     $.ajax({
       url:
