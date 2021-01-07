@@ -11,6 +11,8 @@ logs
 
 node_modules
 bower_components
+.next
+.sw
 
 *.sublime*
 
@@ -27,3 +29,4 @@ sketch
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/vscode,react
+codex-app/public/sw.js.map
