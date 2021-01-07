@@ -3,8 +3,8 @@ import "tailwindcss/tailwind.css";
 import LandingPage from "../components/LandingPage";
 import Navbar from "../components/Navbar";
 import React from "react";
-import Link from "next/link";
-import { signIn, signOut, useSession } from "next-auth/client";
+//import Link from "next/link";
+import { useSession } from "next-auth/client";
 
 export default function Home() {
   const [session, loading] = useSession();
@@ -23,17 +23,17 @@ export default function Home() {
       <main className="container mx-auto my-6 max-w-xl">
         {!session && (
           <>
-            <div>Not in session</div>
-            <button onClick={signIn}>Sign In</button>
+            <LandingPage />
           </>
         )}
         {session && (
           <>
-            <div>In as {session.user.email}</div>
-            <button onClick={signOut}>Sign Out</button>
+            <div> Logged In </div>
+            <a className="rounded bg-blue-500" href="/reader">
+              Go to reader
+            </a>
           </>
         )}
-        <LandingPage />
       </main>
     </div>
   );
