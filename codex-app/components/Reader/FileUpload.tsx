@@ -1,5 +1,8 @@
 import React from "react";
-import ReactDropzone from "react-dropzone";
+import Dropzone, {
+  IDropzoneProps,
+  ILayoutProps,
+} from "react-dropzone-uploader";
 
 // async function fetchLeadsRequest() {
 //   const response = await fetch("/api/leads");
@@ -22,6 +25,24 @@ import ReactDropzone from "react-dropzone";
 //   console.log(data);
 // }
 
+const Layout = ({
+  input,
+  previews,
+  submitButton,
+  dropzoneProps,
+  files,
+  extra: { maxFiles },
+}: ILayoutProps) => {
+  return (
+    <div>
+      {previews}
+
+      <div {...dropzoneProps}>{files.length < maxFiles && input}</div>
+
+      {files.length > 0 && submitButton}
+    </div>
+  );
+};
 export default class FileUpload extends React.Component {
   constructor(props) {
     super(props);
@@ -35,7 +56,7 @@ export default class FileUpload extends React.Component {
     // const req = request.post("https://httpbin.org/post");
 
     files.forEach((file) => {
-      console.log(file);
+      console.log(file.file.name);
       // req.attach(file.name, file);
     });
 
@@ -43,14 +64,43 @@ export default class FileUpload extends React.Component {
   }
 
   render() {
+    // const toast = (innerHTML) => {
+    //   const el = document.getElementById("toast");
+    //   el.innerHTML = innerHTML;
+    //   el.className = "show";
+    //   setTimeout(() => {
+    //     el.className = el.className.replace("show", "");
+    //   }, 3000);
+    // };
+    // const getUploadParams = () => {
+    //   return { url: "https://httpbin.org/post" };
+    // };
+    const handleChangeStatus = ({ meta, remove }, status) => {
+      console.log(meta.name);
+    };
+
     return (
-      <div className="bg-blue-500 rounded">
-        <div className="object-center text-4xl text-white font-bold px-4">
-          Upload document
-        </div>
-        {/* <div className="">
-          <ReactDropzone onDrop={this.drop_cb}></ReactDropzone>
-        </div> */}
+      <div className="bg-blue-500 rounded h-auto py-2 mx-auto max-w-md">
+        <React.Fragment>
+          <div className="text-white text-3xl font-bold text-center" id="toast">
+            Upload a document
+          </div>
+          <div className="rounded bg-blue-300  border-blue-800 text-center mx-3 my-2">
+            <Dropzone
+              // getUploadParams={getUploadParams}
+              onChangeStatus={handleChangeStatus}
+              maxFiles={1}
+              multiple={false}
+              LayoutComponent={Layout}
+              canCancel={false}
+              inputContent="Drag file or:"
+              styles={{
+                dropzone: { width: 400, height: 200 },
+                dropzoneActive: { borderColor: "green" },
+              }}
+            />
+          </div>
+        </React.Fragment>
       </div>
     );
   }

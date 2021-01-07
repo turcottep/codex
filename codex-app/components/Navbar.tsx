@@ -20,10 +20,10 @@ export default function Navbar() {
         )}
         {session && (
           <>
-            <div>Welcome {session.user.name}</div>
+            <div className="mx-2 align-center">Welcome {session.user.name}</div>
             <button
               onClick={() => signOut}
-              className="rounded bg-blue-500 hover:bg-blue-600 text-white py-2 px-4"
+              className="rounded bg-gray-500 hover:bg-blue-600 text-white py-2 px-4 mx-4 max-h-10"
             >
               Logout
             </button>
