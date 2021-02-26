@@ -62,21 +62,23 @@ export default class NameForm extends React.Component {
 
   render() {
     return (
-      <div className="bg-blue-500 rounded">
-        <div className="object-center text-4xl text-white font-bold px-4">
+      <div className="bg-gray-100 rounded-xl max-w-xl mx-auto">
+        <div className="object-center text-4xl text-gray-600 font-bold px-4 pt-4">
           SIGN UP
         </div>
         <div className="gform" id="gform">
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
           <form id="form" className="form my-2 px-4">
-            <div className="flex-direction:column ">
-              <select
+            <div className="flex flex-col ">
+              {/* <select
+                required
                 id="field_study"
                 name="entry.1812034651"
-                className="button rounded"
+                className="button rounded text-gray-400 hover:text-gray-600"
+                // defaultValue="Field of study"
               >
-                <option selected value="default">
+                <option hidden disabled selected value="default">
                   Field of study
                 </option>
                 <option value="engineering">Engineering</option>
@@ -89,18 +91,23 @@ export default class NameForm extends React.Component {
                 <option value="administration">Administration</option>
                 <option value="mathematics">Mathematics</option>
                 <option value="other">Other</option>
-              </select>{" "}
-              <input
-                type="email"
-                className="email rounded my-2 mx-2 w-80"
-                name="entry.217945379"
-                id="email"
-                placeholder="Email"
-                required
-              />
+              </select>*/}
+              <div className="flex flex-col">
+                {/* <span className="text-gray-100 group-hover:text-gray-600 mt-4">
+                  Email:
+                </span> */}
+                <input
+                  type="email"
+                  className="email rounded my-2 px-2 py-2 mx-0"
+                  name="entry.217945379"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
               <button
                 type="button"
-                className="submit bg-blue-300 font-bold rounded px-1 py-2 mx-1 my-2"
+                className="submit bg-manzana text-white font-bold rounded px-2 py-1 mx-auto my-2 mb-4"
                 onClick={this.postToGoogle}
               >
                 Sign Up

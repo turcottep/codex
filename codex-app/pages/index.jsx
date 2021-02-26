@@ -10,7 +10,7 @@ export default function Home() {
   const [session, loading] = useSession();
 
   return (
-    <div>
+    <div className="bg-white">
       <Head>
         <title>Codex Reader</title>
         <link rel="icon" href="/favicon.ico" />
@@ -20,7 +20,7 @@ export default function Home() {
         <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
       </Head>
       <Navbar />
-      <main className="container mx-auto my-6 max-w-xl">
+      <main className="">
         {!session && (
           <>
             <LandingPage />
