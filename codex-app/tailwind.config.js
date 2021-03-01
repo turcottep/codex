@@ -24,10 +24,10 @@ module.exports = {
         lightest: '#f9fafc',
       },
       honey:{
-        DEFAULT: '#FFE4AD',
+        DEFAULT: '#ffbaba',
       },
-      manzana:{
-        DEFAULT:"#FD8369",
+      tomato:{
+        DEFAULT:"#E9411C",
       }
     },
   },

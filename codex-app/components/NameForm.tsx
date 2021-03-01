@@ -62,7 +62,7 @@ export default class NameForm extends React.Component {
 
   render() {
     return (
-      <div className="bg-gray-100 rounded-xl max-w-xl mx-auto">
+      <div className="bg-gray-100 rounded-xl max-w-xl mx-4 sm:mx-auto ">
         <div className="object-center text-4xl text-gray-600 font-bold px-4 pt-4">
           SIGN UP
         </div>
@@ -107,7 +107,7 @@ export default class NameForm extends React.Component {
               </div>
               <button
                 type="button"
-                className="submit bg-manzana text-white font-bold rounded px-2 py-1 mx-auto my-2 mb-4"
+                className="submit bg-tomato text-white font-bold rounded px-2 py-1 mx-auto my-2 mb-4"
                 onClick={this.postToGoogle}
               >
                 Sign Up
