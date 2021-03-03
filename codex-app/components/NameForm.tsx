@@ -31,7 +31,7 @@ export default class NameForm extends React.Component {
   postToGoogle() {
     console.log("lol");
     const field1 = $("#email").val().toString();
-    const field2 = $("#field_study").val().toString();
+    const field2 = $("#email").val().toString();
 
     createLeadRequest(field1, field2);
 
