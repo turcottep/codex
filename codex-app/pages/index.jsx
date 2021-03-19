@@ -10,14 +10,17 @@ export default function Home() {
   const [session, loading] = useSession();
 
   return (
-    <div className="bg-white">
+    <div className="bg-gradient-to-r from-yellow-400 via-pink-500 to-red-500">
       <Head>
-        <title>Salsa</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#90cdf4" />
-        <link rel="apple-touch-icon" href="/logo-96x96.png" />
-        <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
+    <title>Salsa</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
       </Head>
       <Navbar />
       <main className="">
