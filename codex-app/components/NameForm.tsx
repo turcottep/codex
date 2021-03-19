@@ -62,36 +62,12 @@ export default class NameForm extends React.Component {
 
   render() {
     return (
-      <div className="bg-gray-100 rounded-xl max-w-xl mx-4 sm:mx-auto ">
-        <div className="object-center text-4xl text-gray-600 font-bold px-4 pt-4">
-          SIGN UP
-        </div>
+      <div className="max-w-xl mx-4 sm:mx-auto ">
         <div className="gform" id="gform">
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
           <form id="form" className="form my-2 px-4">
             <div className="flex flex-col ">
-              {/* <select
-                required
-                id="field_study"
-                name="entry.1812034651"
-                className="button rounded text-gray-400 hover:text-gray-600"
-                // defaultValue="Field of study"
-              >
-                <option hidden disabled selected value="default">
-                  Field of study
-                </option>
-                <option value="engineering">Engineering</option>
-                <option value="engineering">Health</option>
-                <option value="sciences">Sciences </option>
-                <option value="law">Law</option>
-                <option value="teaching">Teaching</option>
-                <option value="philosophy">Philosophy</option>
-                <option value="marketing">Marketing</option>
-                <option value="administration">Administration</option>
-                <option value="mathematics">Mathematics</option>
-                <option value="other">Other</option>
-              </select>*/}
               <div className="flex flex-col">
                 {/* <span className="text-gray-100 group-hover:text-gray-600 mt-4">
                   Email:
@@ -110,7 +86,7 @@ export default class NameForm extends React.Component {
                 className="submit bg-tomato text-white font-bold rounded px-2 py-1 mx-auto my-2 mb-4"
                 onClick={this.postToGoogle}
               >
-                Sign Up
+                Get Early Acess
               </button>
             </div>
           </form>
