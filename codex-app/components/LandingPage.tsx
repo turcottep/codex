@@ -56,7 +56,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="text-center z-50">
-            <p className="md:hidden leading-normal md:w-3/5 text-gray-600 text-2xl mb-8">
+            <p className="md:hidden leading-normal md:w-3/5 text-black text-2xl mb-8">
               Create recipes for your friends to see, and try new recipes
               created by them.
             </p>
