@@ -31,7 +31,7 @@ export default class NameForm extends React.Component {
   postToGoogle() {
     console.log("lol");
     const field1 = $("#email").val().toString();
-    const field2 = $("#field_study").val().toString();
+    const field2 = $("#email").val().toString();
 
     createLeadRequest(field1, field2);
 
@@ -62,37 +62,18 @@ export default class NameForm extends React.Component {
 
   render() {
     return (
-      <div className="bg-blue-500 rounded">
-        <div className="object-center text-4xl text-white font-bold px-4">
-          SIGN UP
-        </div>
+      <div className="">
         <div className="gform" id="gform">
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-          <form id="form" className="form my-2 px-4">
-            <div className="flex-direction:column ">
-              <select
-                id="field_study"
-                name="entry.1812034651"
-                className="button rounded"
-              >
-                <option selected value="default">
-                  Field of study
-                </option>
-                <option value="engineering">Engineering</option>
-                <option value="engineering">Health</option>
-                <option value="sciences">Sciences </option>
-                <option value="law">Law</option>
-                <option value="teaching">Teaching</option>
-                <option value="philosophy">Philosophy</option>
-                <option value="marketing">Marketing</option>
-                <option value="administration">Administration</option>
-                <option value="mathematics">Mathematics</option>
-                <option value="other">Other</option>
-              </select>{" "}
+          <form id="form" className="form w-full">
+            <div className="flex xl:text-xl flex-col lg:flex-row ">
+              {/* <span className="text-gray-100 group-hover:text-gray-600 mt-4">
+                  Email:
+                </span> */}
               <input
                 type="email"
-                className="email rounded my-2 mx-2 w-80"
+                className="email w-full text-center lg:text-left rounded-t-xl lg:rounded-r-none lg:rounded-l-xl px-2 py-2"
                 name="entry.217945379"
                 id="email"
                 placeholder="Email"
@@ -100,10 +81,10 @@ export default class NameForm extends React.Component {
               />
               <button
                 type="button"
-                className="submit bg-blue-300 font-bold rounded px-1 py-2 mx-1 my-2"
+                className="submit md:px-4 2xl:text-xl text-center whitespace-nowrap bg-tomato text-white font-bold rounded-b-xl lg:rounded-l-none lg:rounded-r-xl w-full lg:w-2/5 px-2 py-2"
                 onClick={this.postToGoogle}
               >
-                Sign Up
+                Get Early Acess
               </button>
             </div>
           </form>

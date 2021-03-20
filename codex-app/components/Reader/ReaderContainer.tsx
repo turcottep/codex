@@ -1,5 +1,6 @@
 import React from "react";
 import FileUpload from "./FileUpload";
+import PDFReader from "./PDFReader";
 
 export default class ReaderContainer extends React.Component {
   constructor(props) {
@@ -15,11 +16,14 @@ export default class ReaderContainer extends React.Component {
 
   render() {
     return (
-      <div className="flex-direction:column py-4">
-        <div className="object-center">Upload a PDF</div>
+      <div className="flex-direction:column bg-gray-100 py-4">
         <FileUpload>
           <div className="rounded bg-blue-500 max-w-auto"></div>
         </FileUpload>
+
+        <div className="my-8 mx-8">
+          <PDFReader />
+        </div>
       </div>
     );
   }
