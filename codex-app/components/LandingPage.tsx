@@ -45,10 +45,14 @@ export default function LandingPage() {
           </div>
           <div className="static flex justify-center md:w-1/3">
             <div className="invisible md:visible  absolute inset-y-0 right-0 w-1/2">
-              <img src="./nourriture_round.svg" alt="Foods" />
+              <img draggable="false" src="./nourriture_round.svg" alt="Foods" />
             </div>
             <div className="z-50">
-              <img className="pb-6 w-full lg:w-64 2xl:w-80" src="tomato.svg" />
+              <img
+                draggable="false"
+                className="pb-6 w-full lg:w-64 2xl:w-80"
+                src="tomato.svg"
+              />
             </div>
           </div>
           <div className="text-center z-50">
