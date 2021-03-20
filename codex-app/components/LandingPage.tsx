@@ -39,7 +39,7 @@ export default function LandingPage() {
               <span>Level Up Your Cooking</span>
             </h1>
             <p className="hidden md:block leading-normal md:w-2/5 text-gray-600 text-3xl mb-8 z-50">
-              Create recipes for your friends to see, and try new recipes
+              Create recipes for your friends to see and try new recipes
               created by them.
             </p>
           </div>
