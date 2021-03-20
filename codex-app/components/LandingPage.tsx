@@ -4,7 +4,7 @@ import NameForm from "./NameForm";
 export default function LandingPage() {
   return (
     <div
-      className="md:pt-24   bg-red-200 h-screen bg-cover bg-center md:bg-right md:bg-50% bg-no-repeat bg-fixed"
+      className="md:pt-24 bg-red-200 min-w-full min-h-full h-screen bg-cover bg-top md:bg-right md:bg-50% bg-no-repeat bg-fixed"
       style={{
         backgroundImage: "url('./nourriture_spaced.svg')",
       }}
