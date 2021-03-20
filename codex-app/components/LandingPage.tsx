@@ -13,13 +13,13 @@ export default function LandingPage() {
         <div className="absolute h-1/8 w-1/5 top-4 right-0">
           <img src="./Boulettes_half.svg" alt="boulettes" />
         </div>
-        <div className="absolute h-1/8 w-1/5 top-20 left-0">
+        <div className="absolute h-1/8 w-1/5 top-40 left-0">
           <img src="./Pain_half.svg" alt="pain" />
         </div>
-        <div className="absolute h-1/8 w-1/5 top-60 left-0">
+        <div className="absolute h-1/8 w-1/5 top-2/5 left-0">
           <img src="./Salade_half.svg" alt="salade" />
         </div>
-        <div className="absolute bottom-40 left-0 h-1/8 w-1/5">
+        <div className="absolute bottom-1/5 left-0 h-1/8 w-1/5">
           <img src="./Cucumber_half.svg" alt="cucumba" />
         </div>
         <div className="absolute bottom-96 right-0 h-1/8 w-1/5">
@@ -36,9 +36,7 @@ export default function LandingPage() {
         <div className="flex flex-col w-full justify-between items-center md:self-start md:flex-row">
           <div className="flex flex-col h-full w-full justify-between md:justify-around items-center md:items-start text-center md:text-left">
             <h1 className="my-4 text-tomato xl:w-2/3 text-5xl xl:text-6xl font-bold leading-tight z-50">
-              <span>Level Up</span>
-              <br></br>
-              <span>Your Cooking</span>
+              <span>Level Up Your Cooking</span>
             </h1>
             <p className="hidden md:block leading-normal md:w-2/5 text-gray-600 text-3xl mb-8 z-50">
               Create recipes for your friends to see, and try new recipes
