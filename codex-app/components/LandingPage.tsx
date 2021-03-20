@@ -4,7 +4,7 @@ import NameForm from "./NameForm";
 export default function LandingPage() {
   return (
     <div
-      className="md:pt-24   bg-red-200 h-screen bg-cover bg-center md:bg-right md:bg-50% bg-no-repeat bg-fixed"
+      className="md:pt-24 bg-red-200 min-w-screen max-h-screen max-w-wcreen min-h-screen h-screen bg-cover bg-top md:bg-right md:bg-50% bg-no-repeat bg-fixed"
       style={{
         backgroundImage: "url('./nourriture_spaced.svg')",
       }}
@@ -26,7 +26,7 @@ export default function LandingPage() {
             <img className="pb-6 w-auto" src="tomato.svg" />
           </div>
         </div>
-        <div className="md:self-start w-full md:w-2/5 lg:w-1/2">
+        <div className="md:self-start w-full sm:mx-0 md:w-2/5 lg:w-1/2">
           <NameForm />
         </div>
       </div>
