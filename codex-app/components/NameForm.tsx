@@ -62,28 +62,26 @@ export default class NameForm extends React.Component {
 
   render() {
     return (
-      <div className="max-w-xl mx-4 sm:mx-auto ">
+      <div className="">
         <div className="gform" id="gform">
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-          <form id="form" className="form my-2 px-4">
-            <div className="flex flex-col ">
-              <div className="flex flex-col">
-                {/* <span className="text-gray-100 group-hover:text-gray-600 mt-4">
+          <form id="form" className="form w-full">
+            <div className="flex xl:text-xl flex-col lg:flex-row ">
+              {/* <span className="text-gray-100 group-hover:text-gray-600 mt-4">
                   Email:
                 </span> */}
-                <input
-                  type="email"
-                  className="email rounded my-2 px-2 py-2 mx-0"
-                  name="entry.217945379"
-                  id="email"
-                  placeholder="Email"
-                  required
-                />
-              </div>
+              <input
+                type="email"
+                className="email w-full text-center lg:text-left rounded-t-xl lg:rounded-r-none lg:rounded-l-xl px-2 py-2"
+                name="entry.217945379"
+                id="email"
+                placeholder="Email"
+                required
+              />
               <button
                 type="button"
-                className="submit bg-tomato text-white font-bold rounded px-2 py-1 mx-auto my-2 mb-4"
+                className="submit md:px-4 2xl:text-xl text-center whitespace-nowrap bg-tomato text-white font-bold rounded-b-xl lg:rounded-l-none lg:rounded-r-xl w-full lg:w-2/5 px-2 py-2"
                 onClick={this.postToGoogle}
               >
                 Get Early Acess
