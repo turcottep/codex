@@ -1,0 +1,19 @@
+<svg width="1114" height="511" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
+    <defs>
+        <radialGradient cx="10601300" cy=".5" r="11657300" fx="10601300" fy="0" gradientUnits="userSpaceOnUse"
+            spreadMethod="pad" id="prefix__b" gradientTransform="matrix(.0001 0 0 .0001 68 97)">
+            <stop offset="0" stop-color="#e16b6b" />
+            <stop offset=".56" stop-color="#e16b6b" />
+            <stop offset=".97" stop-color="#ee6b87" />
+            <stop offset="1" stop-color="#ee6b87" />
+        </radialGradient>
+        <clipPath id="prefix__a">
+            <path d="M68 96h1114v511H68z" />
+        </clipPath>
+    </defs>
+    <g clip-path="url(#prefix__a)" transform="translate(-68 -96)">
+        <path
+            d="M68 208.673c0-34.553 28.022-62.564 62.588-62.564h983.672c40.56-10.152 30.27-48.591 66.74-49.109 0 111.106-4.15 366.187-4.15 477.293 0 34.553 6.13 31.647-28.43 31.647L96.889 604.094c-34.567 0-27.042-.785-27.504-31.185L68 208.673z"
+            fill="url(#prefix__b)" fill-rule="evenodd" />
+    </g>
+</svg>
