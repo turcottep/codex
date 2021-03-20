@@ -38,7 +38,7 @@ module.exports = {
         DEFAULT: '#ffbaba',
       },
       tomato:{
-        DEFAULT:"#E9411C",
+        DEFAULT:"#ED302C",
       }
     },
   },

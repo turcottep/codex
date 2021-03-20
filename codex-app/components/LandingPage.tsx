@@ -13,7 +13,7 @@ export default function LandingPage() {
         <div className="absolute h-1/8 w-1/5 top-4 right-0">
           <img src="./Boulettes_half.svg" alt="boulettes" />
         </div>
-        <div className="absolute h-1/8 w-1/5 top-40 left-0">
+        <div className="absolute h-1/8 w-1/5 max-w-32 top-40 left-0">
           <img src="./Pain_half.svg" alt="pain" />
         </div>
         <div className="absolute h-1/8 w-1/5 top-2/5 left-0">
