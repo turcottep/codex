@@ -62,7 +62,7 @@ export default class NameForm extends React.Component {
 
   render() {
     return (
-      <div className="">
+      <div>
         <div className="gform" id="gform">
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 

@@ -26,7 +26,7 @@ export default function LandingPage() {
             <img className="pb-6 w-auto" src="tomato.svg" />
           </div>
         </div>
-        <div className="md:self-start w-full md:w-2/5 lg:w-1/2">
+        <div className="md:self-start w-full sm:mx-0 md:w-2/5 lg:w-1/2">
           <NameForm />
         </div>
       </div>
