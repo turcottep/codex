@@ -13,7 +13,7 @@ node_modules
 bower_components
 .next
 .sw
-
+./idea
 *.sublime*
 
 psd

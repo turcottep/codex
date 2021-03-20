@@ -84,7 +84,7 @@ export default class NameForm extends React.Component {
                 className="submit md:px-4 2xl:text-xl text-center whitespace-nowrap bg-tomato text-white font-bold rounded-b-xl lg:rounded-l-none lg:rounded-r-xl w-full lg:w-2/5 px-2 py-2"
                 onClick={this.postToGoogle}
               >
-                Get Early Acess
+                Get Early Access
               </button>
             </div>
           </form>

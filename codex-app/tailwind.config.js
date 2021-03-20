@@ -6,11 +6,16 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    inset:{
+      '1/5': '17%',
+      '2/5': '40%',
+    },
     backgroundSize: {
       'auto': 'auto',
       'cover': 'cover',
       'contain': 'contain',
      '50%': '50%',
+     '0': '50%',
      '16': '4rem',},
     extend: {},
     colors:{
@@ -33,7 +38,7 @@ module.exports = {
         DEFAULT: '#ffbaba',
       },
       tomato:{
-        DEFAULT:"#E9411C",
+        DEFAULT:"#ED302C",
       }
     },
   },

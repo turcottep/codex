@@ -6,10 +6,10 @@ export default function Navbar() {
 
   return (
     <nav id="header" className="fixed w-full sm:h-24 z-30 top-0 text-black">
-      <div className="w-full container sm:px-2 lg:px-10 lg:mx-auto flex flex-wrap items-center justify-between h-full py-4 px-4">
+      <div className="w-full sm:px-2 md:px-10 2xl:px-20 lg:mx-auto flex flex-wrap items-center justify-between h-full py-4 px-4">
         <div className="flex items-center">
           <a
-            className="toggleColour text-gray-600 no-underline hover:no-underline font-bold text-2xl sm:text-4xl"
+            className="toggleColour text-gray-700 no-underline hover:no-underline font-bold text-2xl sm:text-4xl"
             href="#"
           >
             {/* <Link href="/">Salsa</Link> */}
