@@ -9,6 +9,11 @@ import React from "react";
 //   }));
 // }
 
+function validateEmail(email) {
+  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
+
 async function createLeadRequest(mail: string, fiel: string) {
   const response = await fetch("/api/leads/create", {
     method: "POST",
@@ -33,37 +38,41 @@ export default class NameForm extends React.Component {
     const field1 = $("#email").val().toString();
     const field2 = $("#email").val().toString();
 
-    createLeadRequest(field1, field2);
+    if (validateEmail(field1)) {
+      createLeadRequest(field1, field2);
 
-    $.ajax({
-      url:
-        "https://www.docs.google.com/forms/d/1qJ8yOg670AI2dsUweVNgeSpyVcBIdoOYdN14VpRt8ko/formResponse?",
-      data: {
-        "entry.217945379": field1,
-        "entry.1812034651": field2,
-      },
-      type: "POST",
-      dataType: "xml",
-      statusCode: {
-        0: function () {
-          //Success message
+      $.ajax({
+        url:
+          "https://www.docs.google.com/forms/d/1qJ8yOg670AI2dsUweVNgeSpyVcBIdoOYdN14VpRt8ko/formResponse?",
+        data: {
+          "entry.217945379": field1,
+          "entry.1812034651": field2,
         },
-        200: function () {
-          //Success Message
+        type: "POST",
+        dataType: "xml",
+        statusCode: {
+          0: function () {
+            //Success message
+          },
+          200: function () {
+            //Success Message
+          },
         },
-      },
-    });
+      });
 
-    $("#gform *").fadeOut(500);
-    $("#gform").prepend(
-      '<h1 className="text-white mx-2">Thanks For Signing Up, We Will Keep You Posted!</h1>'
-    );
+      $("#gform *").fadeOut(500);
+      $("#gform").prepend(
+        '<h1 style="text-align:left;">Thanks For Signing Up, We Will Keep You Posted!</h1>'
+      );
+    } else {
+      alert("Please input a valid Email address");
+    }
   }
 
   render() {
     return (
       <div>
-        <div className="gform" id="gform">
+        <div className="gform text-gray-600" id="gform">
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
           <form id="form" className="form w-full">
