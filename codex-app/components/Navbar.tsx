@@ -5,8 +5,8 @@ export default function Navbar() {
   const [session, loading] = useSession();
 
   return (
-    <nav id="header" className="fixed w-full h-24 z-30 top-0 text-black">
-      <div className="w-full container sm:px-2 lg:mx-auto flex flex-wrap items-center justify-between h-full py-4 px-4">
+    <nav id="header" className="fixed w-full sm:h-24 z-30 top-0 text-black">
+      <div className="w-full container sm:px-2 lg:px-10 lg:mx-auto flex flex-wrap items-center justify-between h-full py-4 px-4">
         <div className="flex items-center">
           <a
             className="toggleColour text-gray-600 no-underline hover:no-underline font-bold text-2xl sm:text-4xl"
