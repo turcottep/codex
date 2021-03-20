@@ -10,7 +10,7 @@ const options = {
     }),
     // ...add more providers here
   ],
-  debug: process.env.NODE_ENV === "developpement",
+  debug: process.env.NODE_ENV === "development",
   secret: process.env.AUTH_SECRET,
   jwt: {
     secret: process.env.JWT_SECRET,

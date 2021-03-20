@@ -10,7 +10,7 @@ export default function Home() {
   const [session, loading] = useSession();
 
   return (
-    <div className="bg-gradient-to-r from-yellow-400 via-pink-500 to-red-500">
+    <div className="bg-white">
       <Head>
         <title>Salsa</title>
         <meta charset="UTF-8" />

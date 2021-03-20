@@ -11,6 +11,7 @@ module.exports = {
       'cover': 'cover',
       'contain': 'contain',
      '50%': '50%',
+     '0': '50%',
      '16': '4rem',},
     extend: {},
     colors:{
