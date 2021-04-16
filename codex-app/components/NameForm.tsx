@@ -82,7 +82,7 @@ export default class NameForm extends React.Component {
                 </span> */}
               <input
                 type="email"
-                className="email w-full text-center lg:text-left rounded-t-xl lg:rounded-r-none lg:rounded-l-xl px-2 py-2"
+                className="email w-full text-center bg-olive lg:text-left rounded-t-xl lg:rounded-r-none lg:rounded-l-xl px-2 py-2"
                 name="entry.217945379"
                 id="email"
                 placeholder="Email"
@@ -90,7 +90,7 @@ export default class NameForm extends React.Component {
               />
               <button
                 type="button"
-                className="submit md:px-4 2xl:text-xl text-center whitespace-nowrap bg-tomato text-white font-bold rounded-b-xl lg:rounded-l-none lg:rounded-r-xl w-full lg:w-2/5 px-2 py-2"
+                className="submit md:px-4 2xl:text-xl text-center whitespace-nowrap bg-leaf text-white font-bold rounded-b-xl lg:rounded-l-none lg:rounded-r-xl w-full lg:w-2/5 px-2 py-2"
                 onClick={this.postToGoogle}
               >
                 Get Early Access
