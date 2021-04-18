@@ -13,7 +13,7 @@ export default function Navbar() {
             href="#"
           >
             {/* <Link href="/">Salsa</Link> */}
-            CryptoFlowers
+            CryptoSeeds
           </a>
           {/* <img
             className="w-4 h-4 mx-2"
